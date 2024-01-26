@@ -1,0 +1,166 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.navbarS {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.logo {
+	position: relative;
+	font-size: 1.5em;
+	left: 25px;
+	margin: 1.6em;
+}
+
+.navbar-links {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1em;
+	padding: 1em;
+	width: 50%;
+}
+
+
+.navbar-links a {
+	padding: 10px;
+	text-decoration: none;
+	color: #111;
+	transition: all .5s ease;
+	border-radius: 1em 2em 1px 30px;
+}
+
+.navbar-links a:hover {
+	background: blue;
+	color: #fff;
+}
+
+.active {
+	background: blue;
+	color: #fff !important;
+}
+.navbar-links li  {
+	list-style: none;
+	padding: 10px;
+}
+
+span {
+	animation-name: logo-led;
+	animation-direction: alternate-reverse;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes logo-led {
+	0% {
+		color: #0210EA;
+	}
+
+	50% {
+		color: #DD22E6;
+	}
+
+	100% {
+		color: #6F02EA;
+	}
+}
+/*NAVBAR-RESPONSIVE*/
+.navbarResponsive {
+	display: none;
+}
+
+/*SECTION 1*/
+
+.sectionOne {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 4em;
+	align-items: center;
+	text-align: center;
+	padding: 4em;
+	margin-top: 1.5em;
+	font-size: 1.2em;
+	  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.sectionOne div  {
+	font-size: 1em !important;
+}
+
+.footer-flex {
+	display: flex;
+	justify-content: center;
+	margin-top: 1.8em;
+}
+
+.footer-flex div h1 {
+	font-size: 1.1em;
+}
+
+
+@media screen and (max-width: 1270px) {
+ .sectionOne {
+ 	font-size: .9em;
+ }
+}
+
+@media screen and (max-width: 950px) {
+	.navbarS {
+		display: none;
+	}
+
+	.navbarResponsive {
+		display: flex;
+		margin-bottom: 12em;
+	}
+}
+
+@media screen and (max-width: 664px) {
+	.sectionOne {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	padding: 1em;
+	margin-top: 3em;
+	font-size: .1em;
+	  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.logo {
+	font-size: .7em;
+}
+
+h1 {
+	font-size: 18em;
+}
+
+.img-sectionOne {
+	height: 200px;
+}
+
+.footer-flex {
+	display: flex;
+	padding: 1em;
+	margin-top: 8em;
+}
+.footer-flex div h1 {
+	font-size: .7em;
+/*	box-shadow: 3px 3px 10px 10px blue;*/
+}
+}
